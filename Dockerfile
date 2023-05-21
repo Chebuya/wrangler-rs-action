@@ -7,7 +7,6 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y build-essential curl nodejs
 RUN curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain nightly -y && \
-    rustup default stable && \
     curl -fsSL https://deb.nodesource.com/setup_current.x | bash - && \
     apt-get install -y nodejs && \
     npm install -g wrangler && \
