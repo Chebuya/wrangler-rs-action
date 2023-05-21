@@ -4,6 +4,7 @@ set -e
 
 export HOME="/github/workspace"
 export WRANGLER_HOME="/github/workspace"
+export PATH="/root/.cargo/bin:$PATH"
 export API_CREDENTIALS=""
 
 mkdir -p "$HOME/.wrangler"
