@@ -2,6 +2,7 @@ FROM ubuntu:latest
 
 ENV XDG_CONFIG_HOME /github/workspace
 ENV WRANGLER_HOME /github/workspace
+ENV PATH="/root/.cargo/bin:${PATH}"
 
 RUN apt-get update && \
     apt-get upgrade -y && \
